@@ -28,7 +28,7 @@ const LogInFillIn = ({submitForm}) => {
                     <label className="login-label">Password</label>
                     <input 
                      type="password"
-                     name="pwd" 
+                     name="password" 
                      placeholder="Enter your password" 
                      className="login-input"
                      value={values.password}

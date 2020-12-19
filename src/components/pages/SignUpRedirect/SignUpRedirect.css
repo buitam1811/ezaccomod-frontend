@@ -34,9 +34,9 @@
   height: 50px;
   margin-top: 10px;
   border-radius: 2px;
-  background-color: transparent;
+  background-color: black;
   outline: none;
-  border: 2.5px solid black;
+  border: none;
   color: #fff;
   font-size: 1rem;
 }

@@ -1,0 +1,86 @@
+.uploadpage-container {
+    margin: 20px auto;
+    width: 800px;
+    position: relative;
+    border-radius: 10px;
+    height: 800px;
+    display: grid;
+  }
+  
+  .upload-content {
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    background: linear-gradient(90deg, rgb(190, 7, 7) 0%, rgb(206, 10, 10) 100%);
+  }
+
+  .upload-heading {
+    margin-top: 30px;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .upload-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .info-inputs {
+    margin-bottom: 0.5rem;
+    width: 80%;
+  }
+  
+  .info-label {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .info-input {
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    border: none;
+  }
+  
+  .info-input::placeholder {
+    color: #595959;
+    font-size: 12px;
+  }
+  
+  .submit-btn {
+    width: 80%;
+    height: 50px;
+    margin-top: 80%;
+    margin-left: 10%;
+    border-radius: 2px;
+    background: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .submit-btn:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    transition: all 0.4s ease-out;
+  }
+  
+  

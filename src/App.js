@@ -9,6 +9,7 @@ import LogIn from './components/pages/LogIn/LogIn.js';
 import HOForm from './components/pages/HouseOwnerSignUp/HOForm.js';
 import Form from './components/pages/SignUp/Form.js';
 import SignUpRedirect from './components/pages/SignUpRedirect/SignUpRedirect'
+import UploadDeals from './components/pages/UploadDeals/UploadDeals'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/sign-up/house-owner' exact component={HOForm}/>
           <Route path='/sign-up/renter' exact component={Form}/>
           <Route path='/log-in' exact component={LogIn}/>
+          <Route path='/upload-deal' exact component={UploadDeals}/>
         </Switch>
         <Footer />
       </Router>

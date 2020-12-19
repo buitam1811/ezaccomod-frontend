@@ -48,8 +48,13 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/about-us' className='nav-links' onClick={closeMobileMenu}>
-                                About Us
+                            <Link to='/profile' className='nav-links' onClick={closeMobileMenu}>
+                                Profile
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/upload-deal' className='nav-links' onClick={closeMobileMenu}>
+                                <i class="fa fa-upload"></i>
                             </Link>
                         </li>
                         <li>
