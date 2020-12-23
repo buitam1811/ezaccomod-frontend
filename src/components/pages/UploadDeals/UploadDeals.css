@@ -1,55 +1,64 @@
 .uploadpage-container {
     margin: 20px auto;
-    width: 800px;
+    width: 1000px;
+    height: 1500px;
     position: relative;
-    border-radius: 10px;
-    height: 800px;
+    border-radius: 20px 20px 20px 20px;
     display: grid;
-  }
-  
-  .upload-content {
-    border-radius: 10px 10px 10px 10px;
-    position: relative;
     background: linear-gradient(90deg, rgb(190, 7, 7) 0%, rgb(206, 10, 10) 100%);
-  }
+}
+  
+.upload-content {
+    position: relative;
+}
 
-  .upload-heading {
+.upload-heading {
     margin-top: 30px;
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 1rem;
     color: #fff;
-  }
+}
 
-  .upload-form {
+.upload-form {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 100%;
+    height: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  
-  
-  .info-inputs {
+ }
+
+ .upload-form-right {
+    position: relative;
+    top: -2.25%;
+ }
+
+.info-inputs {
     margin-bottom: 0.5rem;
     width: 80%;
-  }
+}
   
-  .info-label {
+.info-label {
     display: inline-block;
-    font-size: 0.8rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 5px;
     color: #fff;
-  }
-  
-  .info-input {
+}
+
+.info-facility {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.info-input {
     display: block;
     padding-left: 10px;
     outline: none;
@@ -57,30 +66,54 @@
     height: 40px;
     width: 100%;
     border: none;
-  }
-  
-  .info-input::placeholder {
+}
+
+.info-input::placeholder {
     color: #595959;
-    font-size: 12px;
-  }
+    font-size: 14px;
+}
+
+.select-input {
+    width: 150px;
+    margin-left: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.radio-input {
+    margin-left: 10px;
+    color: rgb(63, 11, 11);
+}
   
-  .submit-btn {
+.info-radio {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.rounded {
+    border-bottom: 3px round white;
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    position: absolute;
     width: 80%;
     height: 50px;
-    margin-top: 80%;
+    margin-top: 65%;
     margin-left: 10%;
-    border-radius: 2px;
-    background: rgb(0, 0, 0);
-    outline: none;
-    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid white;
     color: #fff;
     font-size: 1rem;
-  }
+    color: #fff;
+    padding: 8px 20px;
+    outline: none;
+}
   
-  .submit-btn:hover {
+.submit-btn:hover {
     cursor: pointer;
     background: rgb(0, 0, 0);
     transition: all 0.4s ease-out;
-  }
+}
   
   

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios'
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
@@ -23,6 +24,22 @@ const useForm = (callback, validate) => {
 
     setErrors(validate(values));
     setIsSubmitting(true);
+    const data = {
+      username: values.username,
+      email: values.email,
+      password: values.password,
+      role: "R"
+    };
+    
+    axios.post('api/generic-api/user-list/', data).then(
+      res => {
+        console.log(res);
+      }
+    ).catch(
+      err => {
+        console.log(err);
+      }
+    )
   };
 
   useEffect(

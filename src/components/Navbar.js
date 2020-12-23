@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar(props) {
     const [click,setClick] = useState(false);
     
     const [button, setButton] = useState(true);    
@@ -19,6 +19,11 @@ function Navbar() {
             setButton(true);
         }
     };
+
+    const handleLogout = () => {
+        localStorage.clear();
+        window.location.reload();
+    };
     
     useEffect(() => {
         showButton();
@@ -31,7 +36,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        <img src='./images/logo.png' width="110px" height="66px" />
+                        <img className="logo" src='./images/logo.png' width="110px" height="66px" />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -57,6 +62,8 @@ function Navbar() {
                                 <i class="fa fa-upload"></i>
                             </Link>
                         </li>
+                        {!localStorage.getItem('user')?
+                        <>
                         <li>
                             <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Sign Up
@@ -67,9 +74,21 @@ function Navbar() {
                                 Log In
                             </Link>
                         </li>
+                        </> : 
+                        <>
+                        <li>
+                            <Link to='/log-out' className='nav-links-mobile' onClick={closeMobileMenu,handleLogout}>
+                                Log Out
+                            </Link>
+                        </li>
+                        </>
+                        } 
                     </ul>
-                    {button && <Button buttonStyle='btn--top' path='/sign-up'>Sign Up</Button>}
-                    {button && <Button buttonStyle='btn--top' path='/log-in'>Log In</Button>}
+                    {!localStorage.getItem('user')?
+                    <>{button && <Button buttonStyle='btn--top' path='/sign-up'>Sign Up</Button>}
+                    {button && <Button buttonStyle='btn--top' path='/log-in'>Log In</Button>}</>:
+                    <>{button && <Button buttonStyle='btn--top' path='/log-out' onClick={handleLogout}>Log Out</Button>}</>
+                    }
                 </div>
             </nav>
         </>

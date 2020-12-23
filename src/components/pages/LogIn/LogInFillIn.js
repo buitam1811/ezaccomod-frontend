@@ -4,6 +4,10 @@ import useForm from './LogInUse'
 import validate from './LogInValidate'
 
 const LogInFillIn = ({submitForm}) => {
+    const refreshPage = () => {
+        window.location.reload();
+    }
+
     const { handleChange, handleSubmit, values, errors} = useForm(submitForm, validate);
 
     return (

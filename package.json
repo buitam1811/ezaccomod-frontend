@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.5.0",
     "antd": "^4.9.4",
     "ants": "0.0.3-alpha",
+    "axios": "^0.21.0",
     "font-awesome": "^4.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

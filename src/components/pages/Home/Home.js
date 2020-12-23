@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useState ,useEffect } from 'react';
 import '../../../App.css';
-import Footer from '../../Footer';
-import Cards from '../../Cards.js';
+import { Button } from '../../Button';
+import './Home.css';
 
 function Home() {
-    return (
-        <>
-            <Cards />
-        </>
-    )
+  return (
+    <div className='welcomepage-container'>
+      <h1>SPENDING YOUR HOLIDAY IN VIETNAM ?</h1>
+      <p>Rent a home in the best cities</p>
+      <div className='option-btns'>
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+          path='/products'
+        >
+          GET A RENT NOW
+        </Button>
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+          path='/sign-up'
+        >
+          JOIN OUR COMMUNITY <i class="fas fa-user-plus"></i>
+        </Button>
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

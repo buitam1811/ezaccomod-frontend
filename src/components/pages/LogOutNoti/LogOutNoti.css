@@ -1,0 +1,21 @@
+.logout-container {
+    margin: 20px auto;
+    width: 500px;
+    position: relative;
+    border-radius: 10px;
+    height: 500px;
+    display: grid;
+  }
+  
+  .logout-success {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 80px;
+    color: #fff;
+  }
+  
+  .logout-content {
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    background: linear-gradient(90deg, rgb(190, 7, 7) 0%, rgb(206, 10, 10) 100%);
+  }
