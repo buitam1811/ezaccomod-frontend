@@ -1,0 +1,38 @@
+.profile-form {
+    margin: 20px auto;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    background: linear-gradient(90deg, rgb(190, 7, 7) 0%, rgb(206, 10, 10) 100%);
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.profiles-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-btn-holder {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-submit-btn {
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+    font-size: 1rem;
+    color: #fff;
+    padding: 8px 20px;
+    outline: none;
+}

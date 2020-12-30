@@ -34,8 +34,9 @@ const LogInUse = (callback, validate) => {
       res => {
       console.log(res);
       localStorage.setItem('user', JSON.stringify(res.data));
-      localStorage.setItem("token",res.data.access);
-      localStorage.setItem("user_role",res.data.role);
+      localStorage.setItem('logged', true);
+      localStorage.setItem('token',res.data.access);
+      localStorage.setItem('user_role',res.data.role);
     }
     ).catch(
       err => {

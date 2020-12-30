@@ -10,16 +10,16 @@ const FormSignup = ({ submitForm }) => {
   );
 
   return (
-    <div className='form-content'>
-      <form onSubmit={handleSubmit} className='form' noValidate>
+    <div className='HOform-content'>
+      <form onSubmit={handleSubmit} className='HOform' noValidate>
         <h1>
           Get started with us today! Create your account by filling out the
           information below.
         </h1>
-        <div className='form-inputs'>
-          <label className='form-label'>Username</label>
+        <div className='HOform-inputs'>
+          <label className='HOform-label'>Username</label>
           <input
-            className='form-input'
+            className='HOform-input'
             type='text'
             name='username'
             placeholder='Enter your username'
@@ -28,10 +28,10 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.username && <p>{errors.username}</p>}
         </div>
-        <div className='form-inputs'>
-          <label className='form-label'>Full name</label>
+        <div className='HOform-inputs'>
+          <label className='HOform-label'>Full name</label>
           <input
-            className='form-input'
+            className='HOform-input'
             type='text'
             name='fullname'
             placeholder='Enter your full name'
@@ -40,10 +40,10 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.fullname && <p>{errors.fullname}</p>}
         </div>
-        <div className='form-inputs'>
-          <label className='form-label'>Your ID No.</label>
+        <div className='HOform-inputs'>
+          <label className='HOform-label'>Your ID No.</label>
           <input
-            className='form-input'
+            className='HOform-input'
             type='text'
             name='idno'
             placeholder='Enter your ID No.'
@@ -52,10 +52,10 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.idno && <p>{errors.idno}</p>}
         </div>
-        <div className='form-inputs'>
-          <label className='form-label'>Phone Number</label>
+        <div className='HOform-inputs'>
+          <label className='HOform-label'>Phone Number</label>
           <input
-            className='form-input'
+            className='HOform-input'
             type='tel'
             name='phonenumber'
             placeholder='Enter your phone number'
@@ -64,10 +64,10 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.phonenumber && <p>{errors.phonenumber}</p>}
         </div>
-        <div className='form-inputs'>
-          <label className='form-label'>Email</label>
+        <div className='HOform-inputs'>
+          <label className='HOform-label'>Email</label>
           <input
-            className='form-input'
+            className='HOform-input'
             type='email'
             name='email'
             placeholder='Enter your email'
@@ -76,10 +76,10 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.email && <p>{errors.email}</p>}
         </div>
-        <div className='form-inputs'>
-          <label className='form-label'>Password</label>
+        <div className='HOform-inputs'>
+          <label className='HOform-label'>Password</label>
           <input
-            className='form-input'
+            className='HOform-input'
             type='password'
             name='password'
             placeholder='Enter your password'
@@ -88,10 +88,10 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.password && <p>{errors.password}</p>}
         </div>
-        <div className='form-inputs'>
-          <label className='form-label'>Confirm Password</label>
+        <div className='HOform-inputs'>
+          <label className='HOform-label'>Confirm Password</label>
           <input
-            className='form-input'
+            className='HOform-input'
             type='password'
             name='password2'
             placeholder='Confirm your password'
@@ -100,10 +100,10 @@ const FormSignup = ({ submitForm }) => {
           />
           {errors.password2 && <p>{errors.password2}</p>}
         </div>
-        <button className='form-input-btn' type='submit'>
+        <button className='HOform-input-btn' type='submit'>
           Sign up
         </button>
-        <span className='form-input-login'>
+        <span className='HOform-input-login'>
           Already have an account? Login <a href='/log-in'>here</a>
         </span>
       </form>

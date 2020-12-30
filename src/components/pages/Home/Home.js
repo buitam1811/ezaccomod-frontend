@@ -9,6 +9,8 @@ function Home() {
       <h1>SPENDING YOUR HOLIDAY IN VIETNAM ?</h1>
       <p>Rent a home in the best cities</p>
       <div className='option-btns'>
+        {(localStorage.getItem('user_role')==='S' || localStorage.getItem('user_role')==='R')?
+        <>
         <Button
           className='btns'
           buttonStyle='btn--outline'
@@ -17,6 +19,10 @@ function Home() {
         >
           GET A RENT NOW
         </Button>
+        </> : <></>
+        }
+        {localStorage.getItem('user_role')==='S' ?
+        <>
         <Button
           className='btns'
           buttonStyle='btn--outline'
@@ -25,6 +31,8 @@ function Home() {
         >
           JOIN OUR COMMUNITY <i class="fas fa-user-plus"></i>
         </Button>
+        </> : <></>
+        }
       </div>
     </div>
   );

@@ -1,0 +1,26 @@
+.sidebar-side {
+    list-style-type: none;
+}
+
+.approve-all-btn {
+    display: flex; 
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: x-large;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.remind {
+    justify-content: center;
+    align-items: center;    
+}
+
+.remove-btn {
+    margin: 15px;
+}

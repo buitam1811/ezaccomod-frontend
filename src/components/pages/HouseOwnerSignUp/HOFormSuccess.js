@@ -3,8 +3,8 @@ import './HOForm.css';
 
 const FormSuccess = () => {
   return (
-    <div className='form-content'>
-      <h1 className='form-success'>We have received your request!</h1>
+    <div className='HOform-content'>
+      <h1 className='HOform-success'>We have received your request!</h1>
     </div>
   );
 };

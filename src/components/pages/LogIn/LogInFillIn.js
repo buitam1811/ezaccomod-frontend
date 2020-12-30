@@ -41,6 +41,9 @@ const LogInFillIn = ({submitForm}) => {
                     {errors.password && <p>{errors.password}</p>}
                 </div>
                 <button className="login-btn">Log In Now</button>
+                <span className='form-input-login'>
+                    Haven't had an account yet? Register <a href='/sign-up'>here</a>
+                </span>
             </form>
         </div>
     )

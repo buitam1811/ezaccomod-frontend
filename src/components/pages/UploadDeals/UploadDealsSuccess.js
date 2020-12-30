@@ -1,10 +1,10 @@
 import React from 'react';
-import './UploadDeals.css';
+import './UploadDealsSuccess.css';
 
 const UploadDealsSuccess = () => {
   return (
-    <div className='form-content'>
-      <h1 className='form-success'>We have received your request!</h1>
+    <div className='submitted-content'>
+      <h1 className='submitted-success'>Your post has been put in pending list and will be checked ASAP!</h1>
     </div>
   );
 };

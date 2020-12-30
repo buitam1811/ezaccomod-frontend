@@ -1,0 +1,107 @@
+.postPage {
+    width: 100%;
+    padding: 3rem 4rem
+}
+
+.post-heading {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+}
+
+.product-description {
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 20px;
+}
+
+.roomtype-heading {
+    font-size: 13.5px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-description h1 {
+    font-weight: 300;
+    font-size: 35px;
+    color: #43484D;
+    letter-spacing: -1px;
+}
+
+.product-price span {
+    font-size: 20px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+}
+
+.btn-like {
+    margin-left: 7.5px;
+    display: block;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 15px -8px rgb(240, 75, 113);
+    padding: 10px 17px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.btn-like:hover {
+    transform: translateY(-3px);
+}
+
+.btn-bookmark {
+    margin-left: 7.5px;
+    display: block;
+    text-align: center;
+    background: #000dc2;
+    border-radius: 3px;
+    box-shadow: 0 10px 15px -8px #000dc2;
+    padding: 10px 17px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.btn-bookmark:hover {
+    transform: translateY(-3px);
+}
+
+.btn-suggestlog-in {
+    margin-left: 7.5px;
+    display: block;
+    text-align: center;
+    background: #8f7500;
+    border-radius: 3px;
+    box-shadow: 0 10px 15px -8px  #8f7500;
+    padding: 10px 17px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.btn-suggestlog-in:hover {
+    transform: translateY(-3px);
+}
+
+.post-count {
+    margin-left: 20px;
+}

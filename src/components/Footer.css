@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    bottom: 0;
+    z-index: 999;
   }
   
   .footer-subscription {
@@ -14,8 +16,8 @@
     align-items: center;
     text-align: center;
   
-    margin-bottom: 24px;
-    padding: 24px;
+    margin-bottom: 12px;
+    padding: 12px;
     color: #fff;
   }
   
@@ -110,7 +112,7 @@
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
   
   .social-icons {

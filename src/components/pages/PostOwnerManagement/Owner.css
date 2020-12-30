@@ -1,0 +1,15 @@
+.owner-sidebar-side {
+    list-style-type: none;
+}
+
+.owner-heading {
+    font-size: x-large;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.owner-remind {
+    justify-content: center;
+    align-items: center;    
+}

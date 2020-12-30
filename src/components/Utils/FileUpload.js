@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import Dropzone from 'react-dropzone';
+import './FileUpload.css'
 import Axios from 'axios';
+import { Row,Col } from 'antd'
+
+
 function FileUpload(props) {
 
     const [Images, setImages] = useState([])
@@ -36,35 +40,41 @@ function FileUpload(props) {
     }
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Dropzone
-                onDrop={onDrop}
-                multiple={false}
-                maxSize={800000000}
-            >
-                {({ getRootProps, getInputProps }) => (
-                    <div style={{
-                        width: '300px', height: '240px', border: '1px solid lightgray',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center'
-                    }}
-                        {...getRootProps()}
-                    >
-                        {console.log('getRootProps', { ...getRootProps() })}
-                        {console.log('getInputProps', { ...getInputProps() })}
-                        <input {...getInputProps()} />
-
-                    </div>
-                )}
-            </Dropzone>
-
-            <div style={{ display: 'flex', width: '350px', height: '240px', overflowX: 'scroll' }}>
-
-                {Images.map((image, index) => (
-                    <div onClick={() => onDelete(image)}>
-                        <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`${image.picture}`} alt={`roomImg-${index}`} />
-                    </div>
-                ))}
-            </div>
+        <div className='image-insertion'>
+            <Row gutter={[16,16]}>
+                <Col lg={12} xs={24}>
+                    <Row className='drop-box'>
+                        <Dropzone
+                            onDrop={onDrop}
+                            multiple={false}
+                            maxSize={800000000}
+                        >
+                            {({ getRootProps, getInputProps }) => (
+                                <div className='drop-image' {...getRootProps()}>
+                                    {console.log('getRootProps', { ...getRootProps() })}
+                                    {console.log('getInputProps', { ...getInputProps() })}
+                                    <input {...getInputProps()} />
+                                </div>
+                            )}
+                        </Dropzone>
+                    </Row>
+                    <Row className='instruction'>
+                        <h2>Click the zone to insert images</h2>
+                    </Row>
+                </Col>
+                <Col lg={12} xs={24}>
+                    <Row className='sample-box' >
+                        {Images.map((image, index) => (
+                            <div onClick={() => onDelete(image)}>
+                                <img style={{ minWidth: '300px', width: '300px', height: '240px' }} src={`${image.picture}`} alt={`roomImg-${index}`} />
+                            </div>
+                        ))}
+                    </Row>
+                    <Row className='instruction'>
+                        <h2>Images Chosen</h2>
+                    </Row>
+                </Col>
+            </Row>
         </div>
     )
 }

@@ -1,36 +1,34 @@
 import React, { useState } from 'react';
 import ImagesUpload from './ImagesUpload';
 import './UploadDeals.css';
-import UploadDealsFillIn from './UploadDealsFillIn';
 import UploadDealsSuccess from './UploadDealsSuccess';
-import validate from './validateInfoUp';
-import useUp from './useUp';
+import Upload from './Upload'
 
 const UploadDeals = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isImagesSubmitted, setIsImagesSubmitted] = useState(false);
 
   function submitForm() {
     setIsSubmitted(true);
   }
 
-  const [room, setroom] = useState(1)
+  function submitImage() {
+    setIsImagesSubmitted(true);
+  }
 
-  const handleRoom1 = (roomid) => {
-    setroom(roomid)
+  const [room, setroom] = useState('')
+
+  function handleRoom(roomid) {
+    setroom(roomid);
   }
 
   return (
     <div className="uploadpage-container">
-    <div className="upload-content">
-        <div className="upload-heading">
-            <h1>Upload A Product</h1>
-        </div>
-        {!isSubmitted ? (
-          <UploadDealsFillIn submitForm={submitForm} handleRoom={handleRoom1}/>
-        ) : (
-          <UploadDealsSuccess/>
-        )}
-    </div>
+      {!isSubmitted ? (
+        <Upload submitForm={submitForm} handleRoom={handleRoom}/>
+      ) : (!isImagesSubmitted ?
+        <ImagesUpload roomID={room} submit={submitImage}/> : <UploadDealsSuccess/>
+      )}
     </div>
   );
 };

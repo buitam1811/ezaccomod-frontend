@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const useUp = (callback, validate) => {
+const useUp = (callback, handleRoom, validate) => {
     const [values, setValues] = useState({
         address_number: '',
         address_street: '',
@@ -16,11 +16,11 @@ const useUp = (callback, validate) => {
         air_conditional: null,
         balcony: null,
         water_electricity_bill_per_week: '',
-        optional_furniture: '',
         is_available: null,
         room_description: '',
+        price_renter_to_pay: '',
     });
-    const [roomid, setroomid] = useState(1)
+    const [roomid, setroomid] = useState(1);
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -52,7 +52,7 @@ const useUp = (callback, validate) => {
             air_conditional: values.air_conditional,
             balcony: values.balcony,
             water_electricity_bill_per_week: values.water_electricity_bill_per_week,
-            optional_furniture: values.optional_furniture,
+            price_renter_to_pay: values.price_renter_to_pay,
             is_available: values.is_available,
             room_description: values.room_description
         };
@@ -61,6 +61,7 @@ const useUp = (callback, validate) => {
         res => {
             console.log(res);
             setroomid(res.data.id);
+            handleRoom(res.data.id);
         }
         ).catch(
         err => {
@@ -77,7 +78,7 @@ const useUp = (callback, validate) => {
     [errors]
     );
 
-    return { handleChange, handleSubmit, values, errors , roomid};
+    return { handleChange, handleSubmit, values, errors};
 };
 
 export default useUp;

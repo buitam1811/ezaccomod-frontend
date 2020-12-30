@@ -1,0 +1,58 @@
+.review-section {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.rate {
+    display: none;
+}
+
+.star {
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.rate-content-heading {
+    font-size: large;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.fivestar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.rate-content {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-label {
+    font-size: large;
+    margin-right: 15px;
+}
+
+.review-input {
+    vertical-align: middle;
+    height: 50px;
+    font-size: large;
+    margin: 5px 10px 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.review-btn {
+    height: 45px
+}
+

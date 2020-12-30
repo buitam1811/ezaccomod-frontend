@@ -1,42 +1,47 @@
 .uploadpage-container {
     margin: 20px auto;
-    width: 1000px;
-    height: 1500px;
-    position: relative;
+    width: 70%;
+    height: 100%;
     border-radius: 20px 20px 20px 20px;
-    display: grid;
+    display: flex;
     background: linear-gradient(90deg, rgb(190, 7, 7) 0%, rgb(206, 10, 10) 100%);
-}
-  
-.upload-content {
-    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .upload-heading {
     margin-top: 30px;
-    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-heading h1{
+    font-size: xx-large;
+    text-align: center;
+    color: #fff;
+}
+
+.upload-heading h3{
+    font-size: large;
     text-align: center;
     color: #fff;
 }
 
 .upload-form {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: block;
  }
 
- .upload-form-right {
-    position: relative;
-    top: -2.25%;
- }
+.rleft-inputs {
+    justify-content: center;
+    align-items: center;
+}
+
+.rright-inputs {
+    justify-content: center;
+    align-items: center;
+}
 
 .info-inputs {
     margin-bottom: 0.5rem;
@@ -50,12 +55,18 @@
     color: #fff;
 }
 
+.facility {
+    font-size: 21px;
+    color: #ffff;
+}
+
 .info-facility {
     font-size: 1.5rem;
     color: #fff;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 5px;
-    padding: 0;
 }
 
 .info-input {
@@ -77,6 +88,7 @@
     width: 150px;
     margin-left: 10px;
     border-radius: 5px 5px 5px 5px;
+    outline: none;
 }
 
 .radio-input {
@@ -94,12 +106,15 @@
     margin-bottom: 15px;
 }
 
+.btn-holder {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .submit-btn {
-    position: absolute;
     width: 80%;
     height: 50px;
-    margin-top: 65%;
-    margin-left: 10%;
     border-radius: 30px;
     background-color: transparent;
     border: 2px solid white;
@@ -116,4 +131,37 @@
     transition: all 0.4s ease-out;
 }
   
-  
+.upload-image-section {
+    justify-content: center;
+    align-items: center;
+}
+
+.duration-options{
+    justify-content: center;
+    align-items: center;
+}
+
+.image-submit {
+    justify-content: center;
+    align-items: center;
+    margin: 40px
+}
+
+.image-submit-btn {
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+    font-size: 1rem;
+    color: #fff;
+    padding: 8px 20px;
+    outline: none;
+}
+
+.image-submit-btn:hover {
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    transition: all 0.4s ease-out;
+}

@@ -38,6 +38,7 @@
   width: 60vw;
   justify-content: end;
   margin-right: 2rem;
+  margin-bottom: -0.25px;
 }
 
 .nav-item {
@@ -54,6 +55,7 @@
 }
 
 .nav-links:hover {
+  color: #fff;
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
 }
